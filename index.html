@@ -1,0 +1,54 @@
+// index.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Manipulation Operations</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <h3>Select a staff member image:</h3>
+            <input type="files" name="staffmember_image">
+            <br/>
+            <h3>Select a product image:</h3>
+            <input type="files" name="product_image">
+            <br/>
+            <input type="submit" value="upload" name="submit">
+        </form>
+        
+        <?php
+        require_once './Staff.php';
+        require_once './Product.php'
+        
+        if(isset[$_POST['submit']])
+            $extension1 = pathinfo($_FILES['file']['staffmember_image'], PATHINFO_EXTENSION);
+        {
+           if($extension1 == 'jpg' || $extension1 == 'png')
+           {
+               echo "File = " . staffmember_image;
+           }
+           else
+           {
+               echo "Oops! Something went wrong. Please try again."
+           }
+        }
+        
+        if(isset)[$_POST['submit']]
+            $extension2 = pathinfo($_FILES['file']['product_image'], PATHINFO_EXTENTION);
+            {
+                if($extension2 == 'jpg' || $extension2 == 'png')
+                {
+                    echo "File = " . product_image;
+                }
+                else
+                {
+                    echo "Oops! Somethintg went wrong. Please try again."
+                }
+            }
+        
+        ?>
+        
+        
+        
+    </body>
+    
+</html>
