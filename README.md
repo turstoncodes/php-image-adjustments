@@ -1,2 +1,2 @@
 # php-image-adjustments
-Basic image manipulation using PHP
+Basic image manipulation using PHP and GD functions 
